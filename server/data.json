@@ -1,0 +1,58 @@
+{
+  "todos": [
+    {
+      "id": "1",
+      "title": "Buy groceries",
+      "description": "Buy milk, eggs, bread, and fruits from the supermarket.",
+      "createdAt": "2024-10-30",
+      "status": "Completed",
+      "priority": "High",
+      "dueDate": "2024-10-31"
+    },
+    {
+      "id": "2",
+      "title": "Study react",
+      "description": "Learn some basic fundamentals: React hooks, states, routers, and axios for fetching data before the live coding test",
+      "createdAt": "2024-11-02",
+      "status": "Completed",
+      "priority": "High",
+      "dueDate": "2024-11-06"
+    },
+    {
+      "title": "Prepare presentation slides",
+      "description": "Create slides for next week meeting about the project update",
+      "status": "In Progress",
+      "priority": "Medium",
+      "dueDate": "2024-11-27",
+      "createdAt": "2024-11-15",
+      "id": "3"
+    },
+    {
+      "id": "4",
+      "title": "Book flight tickets",
+      "description": "Find and book flight tickets for the upcoming conference",
+      "createdAt": "2024-11-13",
+      "status": "Not Started",
+      "priority": "Low",
+      "dueDate": "2024-11-14"
+    },
+    {
+      "id": "5",
+      "title": "Send project report",
+      "description": "Email the latest project report to the manager",
+      "createdAt": "2024-11-13",
+      "status": "In Progress",
+      "priority": "High",
+      "dueDate": "2024-11-15"
+    },
+    {
+      "id": "6",
+      "title": "Schedule doctor appointment",
+      "description": "Call the hospital to book a schedule with a dentist for a routine checkup",
+      "createdAt": "2024-11-08",
+      "status": "Not Started",
+      "priority": "Low",
+      "dueDate": "2024-11-20"
+    }
+  ]
+}
