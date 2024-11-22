@@ -15,7 +15,7 @@ function DetailTodoPage() {
       setTodo(data);
       setLoading(false);
     });
-  }, []);
+  }, [todo]);
 
   return loading ? (
     <Spinner />

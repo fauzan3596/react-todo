@@ -5,7 +5,7 @@ const getTodos = async (cb) => {
   try {
     const todos = await axios({
       method: "GET",
-      url: "/api/todos",
+      url: "https://verbena-lightning-bench.glitch.me/todos",
     });
     cb(todos.data);
   } catch (error) {
@@ -18,13 +18,13 @@ const addTodo = async (temp) => {
   try {
     const response = await axios({
       method: "GET",
-      url: "/api/todos",
+      url: "https://verbena-lightning-bench.glitch.me/todos",
     });
     const todos = response.data;
 
     await axios({
       method: "POST",
-      url: "/api/todos",
+      url: "https://verbena-lightning-bench.glitch.me/todos",
       data: {
         id: todos.length > 0 ? (Math.max(...todos.map((todo) => todo.id)) + 1).toString() : "1",
         title,
@@ -53,7 +53,7 @@ const getTodoById = async (id, cb) => {
   try {
     const todo = await axios({
       method: "GET",
-      url: `/api/todos/${id}`,
+      url: `https://verbena-lightning-bench.glitch.me/todos/${id}`,
     });
     cb(todo.data);
   } catch (error) {
@@ -73,7 +73,7 @@ const deleteTodo = async (id) => {
       confirmButtonText: "Yes, delete it!",
     });
     if (result.isConfirmed) {
-      await axios.delete(`/api/todos/${id}`);
+      await axios.delete(`https://verbena-lightning-bench.glitch.me/todos/${id}`);
       Swal.fire({
         title: "Deleted!",
         text: "Your file has been deleted.",
@@ -97,7 +97,7 @@ const editTodo = async (temp) => {
   try {
     await axios({
       method: "PUT",
-      url: `/api/todos/${id}`,
+      url: `https://verbena-lightning-bench.glitch.me/todos/${id}`,
       data: {
         title,
         description,

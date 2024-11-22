@@ -13,7 +13,7 @@ function TodosList({ isHome = false }) {
       setTodos(data);
       setLoading(false);
     });
-  }, []);
+  }, [todos]);
 
   let completedTodos = todos.filter((todo) => todo.status === "Completed");
   let incompleteTodos = todos.filter((todo) => todo.status !== "Completed");
